@@ -335,7 +335,7 @@ header {
     margin-bottom: 0;
     padding-right: 15px; }
     header .not-bell:hover .bell {
-      animation: rotate 3s infinite; }
+      animation: rotate 3s both infinite; }
   header .bell {
     width: 100%; }
   header .circle-notification {
@@ -363,13 +363,11 @@ header {
 
 @keyframes rotate {
   0% {
-    transform: rotate(0); }
-  33% {
     transform: rotate(20deg); }
-  66% {
+  50% {
     transform: rotate(-20deg); }
   100% {
-    transform: rotate(0); } }
+    transform: rotate(20deg); } }
 /* ============================================= */
 /*              Navigation                       */
 /* ============================================= */

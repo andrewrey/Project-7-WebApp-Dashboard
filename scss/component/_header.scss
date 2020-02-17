@@ -19,7 +19,7 @@ header {
     padding-right: 15px;
     &:hover{
       .bell{
-        animation: rotate 3s infinite;
+        animation: rotate 3s both infinite;
       }
     }
   }
@@ -61,16 +61,12 @@ header {
 
 @keyframes rotate {
   0% {
-    transform: rotate(0);
-  }
-  33% {
     transform: rotate(20deg);
   }
-
-  66% {
+  50% {
     transform: rotate(-20deg);
   }
-  100% {
-    transform: rotate(0);
+  100%{
+    transform: rotate(20deg);
   }
 }
