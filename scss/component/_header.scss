@@ -11,17 +11,25 @@ header {
   color: $white;
   
   .not-bell{
-    width: 5%;
+    width: 70px;
     position: relative;
     margin-left: auto;
     margin-top: 0;
     margin-bottom: 0;
-    padding-right: 10px;
+    padding-right: 15px;
+    &:hover{
+      .bell{
+        animation: rotate 3s infinite;
+      }
+    }
+  }
+  .bell {
+    width: 100%;
   }
   .circle-notification {
     position: absolute;
     top: -2px;
-    right:18px;
+    right: 14px;
     width: 8px;
     height: 8px;
     background-color: green;
@@ -33,7 +41,7 @@ header {
   }
   
   .userphotobox {
-    width: 80px;
+    width: 70px;
     padding-left: 15px;
     border-left: 1px solid grey;
     margin-right: 15px;
@@ -47,5 +55,22 @@ header {
   p {
     padding-right: 15px;
 
+  }
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  33% {
+    transform: rotate(20deg);
+  }
+
+  66% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(0);
   }
 }
