@@ -329,10 +329,19 @@ header {
   color: #fff; }
   header .not-bell {
     width: 5%;
+    position: relative;
     margin-left: auto;
     margin-top: 0;
     margin-bottom: 0;
     padding-right: 10px; }
+  header .circle-notification {
+    position: absolute;
+    top: -2px;
+    right: 18px;
+    width: 8px;
+    height: 8px;
+    background-color: green;
+    border-radius: 50%; }
   header h1 {
     margin: 0;
     padding-left: 15px; }
