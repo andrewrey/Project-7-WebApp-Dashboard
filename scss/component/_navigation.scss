@@ -4,5 +4,13 @@
 
 nav {
   background-color: $navBar;
-
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  .dashboard-svg,
+  .visits-svg,
+  .members-svg,
+  .settings-svg {
+    width: 45px;
+  }
 }

@@ -372,7 +372,15 @@ header {
 /*              Navigation                       */
 /* ============================================= */
 nav {
-  background-color: #8b26ed; }
+  background-color: #8b26ed;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  nav .dashboard-svg,
+  nav .visits-svg,
+  nav .members-svg,
+  nav .settings-svg {
+    width: 45px; }
 
 /* ============================================= */
 /*              Main                             */
