@@ -43,6 +43,68 @@
     </div>
   </nav>
   <main>
+    <div class="dashboard-header">
+      <h2>Dashboard</h2>
+      <div class="dashboard-search">
+        <input type="search">
+      </div>
+    </div>
+    <div class="alert-bar">
+      <!-- alert will be created by Javascript -->
+    </div>
+    <section class="traffic-linegraph">
+      <div class="traffic-title-and-nav"></div>
+      <h2>Traffic</h2>
+      <ul>
+        <li>Hourly</li>
+        <li>Daily</li>
+        <li>Weekly</li>
+        <li>Monthly</li>
+      </ul>
+      <div class="traffic-graph-container-whole">
+        <canvas id="traffic-chart"></canvas>
+      </div>
+    </section>
+    <section class="daily-traffic">
+      <h2>Daily Traffic</h2>
+      <div class="daily-traffic-graph-containier-half">
+        <canvas id="daily-traffic-chart">
+
+        </canvas>
+      </div>
+    </section>
+    <section class="mobile-half">
+      <h2>Mobile Users</h2>
+      <div class="mobile-graph-container-half">
+        <canvas id="mobile-user-chart">
+
+        </canvas>
+      </div>
+    </section>
+    <section class="social-stats">
+      <h2>Social Stats</h2>
+      <div class=twitter-box>
+        <div class="twitter-svg"></div>
+        <div class="social-text">
+          <p>Twitter</p>
+          <p>10,345</p>
+        </div>
+      </div>
+      <div class="facebook-box">
+        <div class="facebook-svg"></div>
+        <div class="social-text">
+          <p>Facebook</p>
+          <p>8,739</p>
+        </div>
+      </div>
+      <div class="google-box">
+        <div class="google-svg"></div>
+        <div class="social-text">
+          <p>Google&#43;</p>
+          <p>2,530</p>
+        </div>
+      </div>
+    </section>
 
   </main>
   <script src="js/scripts.js" ></script>  
