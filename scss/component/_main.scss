@@ -3,7 +3,62 @@
 /* ============================================= */
 
 
-
 main {
-  display: grid;
+
+/* ============================================= */
+/*              New Memebers Styling             */
+/* ============================================= */
+
+
+  .new-members{
+    display: flex;
+    flex-direction: column;
+    .member-container{
+      display: flex;
+      height: 100px;
+      img{
+        height: 35px;
+        border-radius: 50%;
+        display: inline-block;
+      }
+      .user-info{
+        display: inline-block;
+        p{
+          margin: 0;
+        }
+      }
+      
+    }
+  }
+
+/* ============================================= */
+/*              Recent Activity Styling          */
+/* ============================================= */
+
+.recent-activity{
+  display: flex;
+  flex-direction: column;
+  .member-container{
+    display: flex;
+    height: 100px;
+    img{
+      height: 35px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .user-info {
+      display: inline-block;
+      p{
+        margin: 0;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
 }

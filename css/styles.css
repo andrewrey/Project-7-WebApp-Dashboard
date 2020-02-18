@@ -385,8 +385,44 @@ nav {
 /* ============================================= */
 /*              Main                             */
 /* ============================================= */
+main {
+  /* ============================================= */
+  /*              New Memebers Styling             */
+  /* ============================================= */
+  /* ============================================= */
+  /*              Recent Activity Styling          */
+  /* ============================================= */ }
+  main .new-members {
+    display: flex;
+    flex-direction: column; }
+    main .new-members .member-container {
+      display: flex;
+      height: 100px; }
+      main .new-members .member-container img {
+        height: 35px;
+        border-radius: 50%;
+        display: inline-block; }
+      main .new-members .member-container .user-info {
+        display: inline-block; }
+        main .new-members .member-container .user-info p {
+          margin: 0; }
+  main .recent-activity {
+    display: flex;
+    flex-direction: column; }
+    main .recent-activity .member-container {
+      display: flex;
+      height: 100px; }
+      main .recent-activity .member-container img {
+        height: 35px;
+        border-radius: 50%;
+        display: inline-block; }
+      main .recent-activity .member-container .user-info {
+        display: inline-block; }
+        main .recent-activity .member-container .user-info p {
+          margin: 0; }
+
 /* ============================================= */
-/*              Grid Layout                      */
+/*              Grid Layout Header/Nav/Main      */
 /* ============================================= */
 body {
   display: grid;
@@ -403,6 +439,12 @@ nav {
 
 main {
   grid-area: main; }
+
+/* ============================================= */
+/*              Grid Layout: Main internals      */
+/* ============================================= */
+main {
+  display: grid; }
 
 /* ============================================= */
 /*              Forms                            */
