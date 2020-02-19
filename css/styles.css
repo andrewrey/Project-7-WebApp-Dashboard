@@ -322,7 +322,7 @@ template {
 /*              Header                           */
 /* ============================================= */
 header {
-  background-color: #ca9cf7;
+  background-color: #7279C0;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -372,7 +372,7 @@ header {
 /*              Navigation                       */
 /* ============================================= */
 nav {
-  background-color: #8b26ed;
+  background-color: #4D4A76;
   display: flex;
   justify-content: space-evenly;
   align-items: center; }
@@ -443,14 +443,14 @@ main {
         main .social-stats .flex-wrap .box p.stat {
           font-size: 1.8rem; }
         main .social-stats .flex-wrap .box p.title {
-          color: #8b26ed;
+          color: #7370AF;
           font-size: .9rem; }
   main .social-stats .twitter-svg,
   main .social-stats .facebook-svg,
   main .social-stats .google-svg {
     width: 40px;
     height: 40px;
-    background-color: blue;
+    background-color: #7370AF;
     border-radius: 50%;
     display: flex;
     align-items: center;
