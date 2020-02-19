@@ -34,4 +34,8 @@ main {
 
 main {
   display: grid;
+  @mixin mq($break) {
+    grid-template-columns: 50% 50%;
+  }
 }
+
