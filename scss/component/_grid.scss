@@ -12,6 +12,14 @@ body {
     "header"
     "nav"
     "main";
+  @include mq($break) {
+    grid-template-columns: 55px 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "header header"
+      "nav main"
+      "nav main";
+    }
 }
 
 header{
