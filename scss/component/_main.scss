@@ -56,7 +56,46 @@ main {
 }
 
 
+/* ============================================= */
+/*              Recent Activity Styling          */
+/* ============================================= */
 
+.social-stats{
+  .flex-wrap{
+    display: flex;
+    justify-content: space-evenly;
+    .box{
+      border: 1px solid grey;
+      background-color: lightcyan;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      margin-right: 15px;
+      margin-left: 15px;
+      flex: 1;
+      flex-basis: 150px;
+      max-width: 255px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p {
+        margin: 0;
+        padding-left: 15px;
+      }
+    }
+  }
+  .twitter-svg,
+  .facebook-svg,
+  .google-svg {
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+}
 
 
 
