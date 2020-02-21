@@ -14,6 +14,20 @@
   h2{
     margin-right: auto;
   }
+  .dashboard-search {
+    border: 1px solid black;
+    width: 80%;
+    padding: 15px 0;
+    background-color: lightgrey;
+    border-radius: 2%;
+    text-align: left;
+    @include flex($align:center, $just:flex-end);
+    input{
+      margin-right: 10px;
+      height: 35px;
+      width: 43%
+    }
+  }
 }
 
 

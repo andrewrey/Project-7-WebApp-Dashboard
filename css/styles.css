@@ -399,6 +399,20 @@ nav {
   align-items: center; }
   .dashboard-header h2 {
     margin-right: auto; }
+  .dashboard-header .dashboard-search {
+    border: 1px solid black;
+    width: 80%;
+    padding: 15px 0;
+    background-color: lightgrey;
+    border-radius: 2%;
+    text-align: left;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .dashboard-header .dashboard-search input {
+      margin-right: 10px;
+      height: 35px;
+      width: 43%; }
 
 /* ============================================= */
 /*              New Memebers Styling             */
