@@ -13,7 +13,7 @@ body {
     "nav"
     "main";
   @include mq($break) {
-    grid-template-columns: 55px 1fr;
+    grid-template-columns: 65px 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
       "header header"

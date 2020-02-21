@@ -380,6 +380,7 @@ nav {
     width: 45px; }
   @media (min-width: 768px) {
     nav {
+      display: flex;
       flex-direction: column;
       justify-content: flex-start; }
       nav .svg {
@@ -390,6 +391,15 @@ nav {
 /* ============================================= */
 /*              Main                             */
 /* ============================================= */
+/* ============================================= */
+/*       Dashboard Header with search bar        */
+/* ============================================= */
+.dashboard-header {
+  display: flex;
+  align-items: center; }
+  .dashboard-header h2 {
+    margin-right: auto; }
+
 /* ============================================= */
 /*              New Memebers Styling             */
 /* ============================================= */
@@ -473,7 +483,7 @@ body {
   grid-template-areas: "header" "nav" "main"; }
   @media (min-width: 768px) {
     body {
-      grid-template-columns: 55px 1fr;
+      grid-template-columns: 65px 1fr;
       grid-template-rows: auto;
       grid-template-areas: "header header" "nav main" "nav main"; } }
 

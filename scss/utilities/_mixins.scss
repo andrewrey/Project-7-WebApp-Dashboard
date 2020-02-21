@@ -20,4 +20,5 @@
     flex-wrap: $wrap;
     justify-content: $just;
     align-items: $align;
+    @content;
 }
