@@ -42,8 +42,32 @@ main {
 
 main {
   display: grid;
-  @mixin mq($break) {
-    grid-template-columns: 50% 50%;
+  @include mq($break) {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
+.dashboard-header,
+.traffic-linegraph,
+.social-stats {
+  @include mq ($break){
+    grid-column: 1 / -1;
+  }
+}
+
+.daily-traffic,
+.new-members,
+.message-user {
+  @include mq($break){
+    grid-column: 1 / 2;
+  }
+}
+
+
+.mobile-half,
+.recent-activity,
+.settings {
+  @include mq($break){
+    grid-column: 2/ span 1 ;
+  }
+}

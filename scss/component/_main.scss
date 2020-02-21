@@ -16,11 +16,14 @@
   }
   .dashboard-search {
     border: 1px solid black;
-    width: 80%;
+    width: 60%;
     padding: 15px 0;
     background-color: lightgrey;
     border-radius: 2%;
     text-align: left;
+    @include mq($break){
+      width: 80%;
+    }
     @include flex($align:center, $just:flex-end);
     input{
       margin-right: 10px;

@@ -401,7 +401,7 @@ nav {
     margin-right: auto; }
   .dashboard-header .dashboard-search {
     border: 1px solid black;
-    width: 80%;
+    width: 60%;
     padding: 15px 0;
     background-color: lightgrey;
     border-radius: 2%;
@@ -409,6 +409,9 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center; }
+    @media (min-width: 768px) {
+      .dashboard-header .dashboard-search {
+        width: 80%; } }
     .dashboard-header .dashboard-search input {
       margin-right: 10px;
       height: 35px;
@@ -515,6 +518,27 @@ main {
 /* ============================================= */
 main {
   display: grid; }
+  @media (min-width: 768px) {
+    main {
+      grid-template-columns: 1fr 1fr; } }
+
+@media (min-width: 768px) {
+  .dashboard-header,
+  .traffic-linegraph,
+  .social-stats {
+    grid-column: 1 / -1; } }
+
+@media (min-width: 768px) {
+  .daily-traffic,
+  .new-members,
+  .message-user {
+    grid-column: 1 / 2; } }
+
+@media (min-width: 768px) {
+  .mobile-half,
+  .recent-activity,
+  .settings {
+    grid-column: 2/span 1; } }
 
 /* ============================================= */
 /*              Forms                            */
