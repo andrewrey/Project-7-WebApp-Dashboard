@@ -418,6 +418,24 @@ nav {
       width: 43%; }
 
 /* ============================================= */
+/*              Traffic Full Width Chart         */
+/* ============================================= */
+.traffic-title-and-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .traffic-title-and-nav ul li {
+    display: inline-block;
+    margin-right: 15px; }
+
+.traffic-graph-container-whole {
+  width: 80vw;
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    .traffic-graph-container-whole {
+      width: 90vw; } }
+
+/* ============================================= */
 /*              New Memebers Styling             */
 /* ============================================= */
 .new-members {
