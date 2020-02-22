@@ -18,6 +18,7 @@ let myChart = new Chart(trafficChart,{
       }],
     },
     options:{
+      aspectRatio: 2.5,
       animation: {
         durration: 0
       },
@@ -35,4 +36,81 @@ let myChart = new Chart(trafficChart,{
         }]
       }
     }
+});
+
+
+//                                    //
+//          DAILY TRAFFIC HALF        //
+//                                    //
+
+
+const dailyTrafficChart = document.querySelector('#daily-traffic-chart');
+
+let myDailyTrafficChart = new Chart(dailyTrafficChart, {
+  type: 'bar',
+  data:{
+    labels:['S', 'M', 'T', 'W', 'T', 'F', 'S'],
+    datasets:[{
+      label: '# of Hits',
+      data:[75, 115, 175, 125, 225, 200, 100], 
+      backgroundColor: '#7475c1', 
+      borderWidth: 1
+    }]
+  },
+  options:{
+    legend:{
+      display: false
+    },
+    scales:{
+      yAxes:[{
+        ticks: {
+          beginAtZero: true
+        }
+      }]
+    }
+  }
+});
+
+
+//                                    //
+//          MOBIL USERS HALF          //
+//                                    //
+
+
+const mobileUsersChart = document.querySelector('#mobile-user-chart');
+
+let myMobileChart = new Chart(mobileUsersChart, {
+  type: 'doughnut',
+  data:{
+    labels:['Desktop', 'Tablet', 'Phones'],
+    datasets:[{
+      label: '# of Users',
+      data:[2000, 550, 500], 
+      backgroundColor: [
+        '#7477BF',
+        '#78CF82',
+        '#51B6C8'
+      ], 
+      borderWidth: 0
+    }]
+  },
+  options:{
+    legend:{
+      position: 'right',
+      labels:{
+        boxWidth: 20,
+        fontStyle: 'bold'
+      }
+    },
+    scales:{
+      yAxes:[{
+        gridLines:{
+          display: false
+        },
+        ticks: {
+          display: false
+        }
+      }]
+    }
+  }
 });

@@ -436,6 +436,18 @@ nav {
       width: 90vw; } }
 
 /* ============================================= */
+/* Daily-Traffic Half Chart/ Mobile Half Chart   */
+/* ============================================= */
+.daily-traffic-graph-container-half,
+.mobile-graph-container-half {
+  width: 80vw;
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    .daily-traffic-graph-container-half,
+    .mobile-graph-container-half {
+      width: 45vw; } }
+
+/* ============================================= */
 /*              New Memebers Styling             */
 /* ============================================= */
 .new-members {
