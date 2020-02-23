@@ -177,6 +177,6 @@
 
 
 .message-user form{
-  @include flex($dir:column);
+  @include flex($dir:column, $align: center);
 
 }

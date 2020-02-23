@@ -524,7 +524,8 @@ nav {
 /* ============================================= */
 .message-user form {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center; }
 
 /* ============================================= */
 /*              Grid Layout Header/Nav/Main      */
