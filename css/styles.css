@@ -448,42 +448,6 @@ nav {
       width: 45vw; } }
 
 /* ============================================= */
-/*              New Memebers Styling             */
-/* ============================================= */
-.new-members {
-  display: flex;
-  flex-direction: column; }
-  .new-members .member-container {
-    display: flex;
-    height: 100px; }
-    .new-members .member-container img {
-      height: 35px;
-      border-radius: 50%;
-      display: inline-block; }
-    .new-members .member-container .user-info {
-      display: inline-block; }
-      .new-members .member-container .user-info p {
-        margin: 0; }
-
-/* ============================================= */
-/*              Recent Activity Styling          */
-/* ============================================= */
-.recent-activity {
-  display: flex;
-  flex-direction: column; }
-  .recent-activity .member-container {
-    display: flex;
-    height: 100px; }
-    .recent-activity .member-container img {
-      height: 35px;
-      border-radius: 50%;
-      display: inline-block; }
-    .recent-activity .member-container .user-info {
-      display: inline-block; }
-      .recent-activity .member-container .user-info p {
-        margin: 0; }
-
-/* ============================================= */
 /*              Social Stats Styling          */
 /* ============================================= */
 .social-stats .flex-wrap {
@@ -520,12 +484,61 @@ nav {
   justify-content: center; }
 
 /* ============================================= */
+/*              New Memebers Styling             */
+/* ============================================= */
+.new-members {
+  display: flex;
+  flex-direction: column; }
+  .new-members .member-container {
+    display: flex;
+    height: 100px; }
+    .new-members .member-container img {
+      height: 35px;
+      border-radius: 50%;
+      display: inline-block; }
+    .new-members .member-container .user-info {
+      display: inline-block; }
+      .new-members .member-container .user-info p {
+        margin: 0; }
+
+/* ============================================= */
+/*              Recent Activity Styling          */
+/* ============================================= */
+.recent-activity {
+  display: flex;
+  flex-direction: column; }
+  .recent-activity .member-container {
+    display: flex;
+    height: 100px; }
+    .recent-activity .member-container img {
+      height: 35px;
+      border-radius: 50%;
+      display: inline-block; }
+    .recent-activity .member-container .user-info {
+      display: inline-block; }
+      .recent-activity .member-container .user-info p {
+        margin: 0; }
+
+/* ============================================= */
 /*                 Message User                     */
 /* ============================================= */
 .message-user form {
+  width: 80%;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  align-items: center; }
+  flex-direction: column; }
+  .message-user form input {
+    padding: 10px 0;
+    margin-bottom: 25px;
+    border-radius: 5px; }
+  .message-user form textarea {
+    height: 200px;
+    margin-bottom: 25px;
+    border-radius: 5px; }
+  .message-user form button {
+    padding: 10px 0;
+    background-color: #7370AF;
+    color: #fff; }
 
 /* ============================================= */
 /*              Grid Layout Header/Nav/Main      */
