@@ -520,6 +520,13 @@ nav {
   justify-content: center; }
 
 /* ============================================= */
+/*                 Message User                     */
+/* ============================================= */
+.message-user form {
+  display: flex;
+  flex-direction: column; }
+
+/* ============================================= */
 /*              Grid Layout Header/Nav/Main      */
 /* ============================================= */
 body {
