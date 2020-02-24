@@ -66,13 +66,12 @@
 .mobile-half {
   padding: 30px 6%;
 }
-
 .daily-traffic-graph-container-half, 
 .mobile-graph-container-half {
   width: 80vw;
   margin: 0 auto;
   @include mq($break){
-    width: 45vw;
+    width: 38vw;
   }
 }
 
