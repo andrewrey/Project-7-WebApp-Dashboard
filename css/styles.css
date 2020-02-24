@@ -541,6 +541,26 @@ nav {
     color: #fff; }
 
 /* ============================================= */
+/*                 Settings                      */
+/* ============================================= */
+.settingsHalfscreen {
+  display: flex;
+  flex-direction: column; }
+
+.settingToggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.switch-light {
+  width: 100px; }
+
+.switch-ios.switch-light input:checked ~ span {
+  box-shadow: inset 0 0 0 30px #7370AF; }
+  .switch-ios.switch-light input:checked ~ span a {
+    border-color: grey; }
+
+/* ============================================= */
 /*              Grid Layout Header/Nav/Main      */
 /* ============================================= */
 body {

@@ -236,11 +236,31 @@
 
     <!-- SETTINGS HALFSCREEN WITH TOGGLE SWITCHES   -->
     <!-- -------------------------------- -->
-    <section class="settings">
+    <section class="settingsHalfscreen">
       <h3>Settings</h3>
-      <p>Send Email Notifications</p>
-      <p>Set Porfile to Public</p>
-      <select class="timeZone">
+      <div class='settingToggle'>
+        <p>Send Email Notifications</p>
+        <label class="switch-light switch-ios" onclick="">
+        <input type='checkbox'>
+        <span>
+          <span>Off</span>
+          <span>On</span>
+          <a></a>
+        </span> 
+      </div>
+        <div class='settingToggle'>
+        <p>Set Porfile to Public</p>
+        <label class="switch-light switch-ios" onclick="">
+        <input type='checkbox'>
+          <span>
+            <span>Off</span>
+            <span>On</span>
+            <a></a>
+          </span> 
+      </div>
+      
+      <select class="timeZone" id="times" placeholder="Select Timezone">
+        <option value="" disabled selected hidden>Select Timezone</option>  
         <option value="Atlantic Daylight Time">Atlantic Daylight Time</option>
         <option value="Alaska Daylight Time">Alaska Daylight Time</option>
         <option value="Alaska Standard Time">Alaska Standard Time</option>
