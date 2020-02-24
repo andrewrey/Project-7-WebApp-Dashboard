@@ -420,6 +420,9 @@ nav {
 /* ============================================= */
 /*              Traffic Full Width Chart         */
 /* ============================================= */
+.traffic-linegraph {
+  padding: 30px 3%; }
+
 .traffic-title-and-nav {
   display: flex;
   justify-content: space-between;
@@ -438,6 +441,10 @@ nav {
 /* ============================================= */
 /* Daily-Traffic Half Chart/ Mobile Half Chart   */
 /* ============================================= */
+.daily-traffic,
+.mobile-half {
+  padding: 30px 6%; }
+
 .daily-traffic-graph-container-half,
 .mobile-graph-container-half {
   width: 80vw;
@@ -450,43 +457,46 @@ nav {
 /* ============================================= */
 /*              Social Stats Styling          */
 /* ============================================= */
-.social-stats .flex-wrap {
-  display: flex;
-  justify-content: space-evenly; }
-  .social-stats .flex-wrap .box {
-    border: 1px solid grey;
-    background-color: lightcyan;
-    padding: 15px 0;
-    margin: 0 15px;
-    flex: 1;
-    flex-basis: 150px;
-    max-width: 300px;
+.social-stats {
+  padding: 30px 3%; }
+  .social-stats .flex-wrap {
     display: flex;
-    justify-content: center;
-    align-items: center; }
-    .social-stats .flex-wrap .box p {
-      margin: 0;
-      padding-left: 15px; }
-      .social-stats .flex-wrap .box p.stat {
-        font-size: 1.8rem; }
-      .social-stats .flex-wrap .box p.title {
-        color: #7370AF;
-        font-size: .9rem; }
-.social-stats .twitter-svg,
-.social-stats .facebook-svg,
-.social-stats .google-svg {
-  width: 40px;
-  height: 40px;
-  background-color: #7370AF;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
+    justify-content: space-evenly; }
+    .social-stats .flex-wrap .box {
+      border: 1px solid grey;
+      background-color: lightcyan;
+      padding: 15px 0;
+      margin: 0 15px;
+      flex: 1;
+      flex-basis: 150px;
+      max-width: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .social-stats .flex-wrap .box p {
+        margin: 0;
+        padding-left: 15px; }
+        .social-stats .flex-wrap .box p.stat {
+          font-size: 1.8rem; }
+        .social-stats .flex-wrap .box p.title {
+          color: #7370AF;
+          font-size: .9rem; }
+  .social-stats .twitter-svg,
+  .social-stats .facebook-svg,
+  .social-stats .google-svg {
+    width: 40px;
+    height: 40px;
+    background-color: #7370AF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
 
 /* ============================================= */
 /*              New Memebers Styling             */
 /* ============================================= */
 .new-members {
+  padding: 30px 6%;
   display: flex;
   flex-direction: column; }
   .new-members .member-container {
@@ -505,6 +515,7 @@ nav {
 /*              Recent Activity Styling          */
 /* ============================================= */
 .recent-activity {
+  padding: 30px 6%;
   display: flex;
   flex-direction: column; }
   .recent-activity .member-container {
@@ -522,6 +533,9 @@ nav {
 /* ============================================= */
 /*                 Message User                     */
 /* ============================================= */
+.message-user {
+  padding: 30px 6%; }
+
 .message-user form {
   margin: 0 auto;
   display: flex;
@@ -544,6 +558,7 @@ nav {
 /*                 Settings                      */
 /* ============================================= */
 .settingsHalfscreen {
+  padding: 30px 6%;
   display: flex;
   flex-direction: column; }
 
@@ -580,24 +595,6 @@ nav {
   box-shadow: inset 0 0 0 30px #7370AF; }
   .switch-ios.switch-light input:checked ~ span a {
     border-color: grey; }
-
-/* ============================================= */
-/*                Main Widget Centering          */
-/* ============================================= */
-.daily-traffic,
-.mobile-half,
-.new-members,
-.recent-activity,
-.message-user,
-.settingsHalfscreen {
-  width: 80%;
-  margin: 0 auto; }
-
-.alert-bar,
-.traffic-linegraph,
-.social-stats {
-  width: 90%;
-  margin: 0 auto; }
 
 /* ============================================= */
 /*              Grid Layout Header/Nav/Main      */

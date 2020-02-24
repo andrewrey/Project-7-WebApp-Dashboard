@@ -37,6 +37,10 @@
 /* ============================================= */
 /*              Traffic Full Width Chart         */
 /* ============================================= */
+.traffic-linegraph {
+  padding: 30px 3%;
+}
+
 .traffic-title-and-nav{
   @include flex($just:space-between, $align:center);
   ul li {
@@ -58,6 +62,11 @@
 /* Daily-Traffic Half Chart/ Mobile Half Chart   */
 /* ============================================= */
 
+.daily-traffic,
+.mobile-half {
+  padding: 30px 6%;
+}
+
 .daily-traffic-graph-container-half, 
 .mobile-graph-container-half {
   width: 80vw;
@@ -75,6 +84,7 @@
 /* ============================================= */
 
 .social-stats{
+  padding: 30px 3%;
   .flex-wrap{
     display: flex;
     justify-content: space-evenly;
@@ -131,6 +141,7 @@
 
 
   .new-members{
+    padding: 30px 6%;
     display: flex;
     flex-direction: column;
     .member-container{
@@ -156,6 +167,7 @@
 /* ============================================= */
 
 .recent-activity{
+  padding: 30px 6%;
   display: flex;
   flex-direction: column;
   .member-container{
@@ -184,7 +196,9 @@
 /*                 Message User                     */
 /* ============================================= */
 
-
+.message-user{
+  padding: 30px 6%;
+}
 .message-user form{
   margin: 0 auto;
   @include flex($dir:column);
@@ -213,6 +227,7 @@
 /* ============================================= */
 
 .settingsHalfscreen {
+  padding: 30px 6%;
   @include flex($dir:column);
 }
 
@@ -257,25 +272,3 @@
 
 
 
-/* ============================================= */
-/*                Main Widget Centering          */
-/* ============================================= */
-
-.daily-traffic,
-.mobile-half,
-.new-members,
-.recent-activity,
-.message-user,
-.settingsHalfscreen {
-  width: 80%;
-  margin: 0 auto;
-}
-
-
-
-.alert-bar,
-.traffic-linegraph,
-.social-stats {
-  width: 90%;
-  margin: 0 auto;
-}
