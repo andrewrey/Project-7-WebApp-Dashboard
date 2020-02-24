@@ -523,7 +523,6 @@ nav {
 /*                 Message User                     */
 /* ============================================= */
 .message-user form {
-  width: 80%;
   margin: 0 auto;
   display: flex;
   flex-direction: column; }
@@ -537,6 +536,7 @@ nav {
     border-radius: 5px; }
   .message-user form button {
     padding: 10px 0;
+    border-radius: 5px;
     background-color: #7370AF;
     color: #fff; }
 
@@ -545,15 +545,28 @@ nav {
 /* ============================================= */
 .settingsHalfscreen {
   display: flex;
-  flex-direction: column;
-  width: 80%;
-  margin: 0 auto; }
+  flex-direction: column; }
+
+.timeZone {
+  margin-bottom: 25px; }
+  @media (min-width: 768px) {
+    .timeZone {
+      margin-top: 140px;
+      margin-bottom: 0; } }
 
 .settingsButtons {
+  margin-top: auto;
   display: flex;
   justify-content: space-between; }
   .settingsButtons button {
-    width: 40%; }
+    border-radius: 5px;
+    padding: 10px 0;
+    width: 40%;
+    color: #fff; }
+    .settingsButtons button.save {
+      background-color: #7370AF; }
+    .settingsButtons button.cancel {
+      background-color: darkgray; }
 
 .settingToggle {
   display: flex;
@@ -567,6 +580,24 @@ nav {
   box-shadow: inset 0 0 0 30px #7370AF; }
   .switch-ios.switch-light input:checked ~ span a {
     border-color: grey; }
+
+/* ============================================= */
+/*                Main Widget Centering          */
+/* ============================================= */
+.daily-traffic,
+.mobile-half,
+.new-members,
+.recent-activity,
+.message-user,
+.settingsHalfscreen {
+  width: 80%;
+  margin: 0 auto; }
+
+.alert-bar,
+.traffic-linegraph,
+.social-stats {
+  width: 90%;
+  margin: 0 auto; }
 
 /* ============================================= */
 /*              Grid Layout Header/Nav/Main      */

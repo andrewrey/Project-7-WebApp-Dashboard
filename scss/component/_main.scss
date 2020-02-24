@@ -186,7 +186,6 @@
 
 
 .message-user form{
-  width: 80%;
   margin: 0 auto;
   @include flex($dir:column);
   input{
@@ -201,6 +200,7 @@
   }
   button{
     padding: 10px 0;
+    border-radius: 5px;
     background-color: $socialBar;
     color: $white;
   }
@@ -214,13 +214,30 @@
 
 .settingsHalfscreen {
   @include flex($dir:column);
-  width: 80%;
-  margin: 0 auto;
+}
+
+.timeZone{
+  
+  margin-bottom: 25px;
+  @include mq($break){
+    margin-top: 140px;
+    margin-bottom: 0;
+  }
 }
 .settingsButtons{
+  margin-top: auto;
   @include flex($just:space-between);
   button{
+    border-radius: 5px;
+    padding: 10px 0;
     width: 40%;
+    color: $white;
+    &.save{
+      background-color: $socialBar;
+    }
+    &.cancel{
+      background-color: darkgray;
+    }
   }
 }
 
@@ -238,3 +255,27 @@
   }
 }
 
+
+
+/* ============================================= */
+/*                Main Widget Centering          */
+/* ============================================= */
+
+.daily-traffic,
+.mobile-half,
+.new-members,
+.recent-activity,
+.message-user,
+.settingsHalfscreen {
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+
+.alert-bar,
+.traffic-linegraph,
+.social-stats {
+  width: 90%;
+  margin: 0 auto;
+}
