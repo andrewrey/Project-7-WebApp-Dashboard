@@ -214,6 +214,8 @@
 
 .settingsHalfscreen {
   @include flex($dir:column);
+  width: 80%;
+  margin: 0 auto;
 }
 
 

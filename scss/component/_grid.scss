@@ -66,7 +66,7 @@ main {
 
 .mobile-half,
 .recent-activity,
-.settings {
+.settingsHalfscreen {
   @include mq($break){
     grid-column: 2/ span 1 ;
   }

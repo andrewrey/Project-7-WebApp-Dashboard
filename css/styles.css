@@ -545,7 +545,9 @@ nav {
 /* ============================================= */
 .settingsHalfscreen {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto; }
 
 .settingToggle {
   display: flex;
@@ -608,7 +610,7 @@ main {
 @media (min-width: 768px) {
   .mobile-half,
   .recent-activity,
-  .settings {
+  .settingsHalfscreen {
     grid-column: 2/span 1; } }
 
 /* ============================================= */
