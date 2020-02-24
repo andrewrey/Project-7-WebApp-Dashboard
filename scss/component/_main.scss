@@ -217,7 +217,12 @@
   width: 80%;
   margin: 0 auto;
 }
-
+.settingsButtons{
+  @include flex($just:space-between);
+  button{
+    width: 40%;
+  }
+}
 
 .settingToggle {
   @include flex($just:space-between, $align:center);

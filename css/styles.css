@@ -549,6 +549,12 @@ nav {
   width: 80%;
   margin: 0 auto; }
 
+.settingsButtons {
+  display: flex;
+  justify-content: space-between; }
+  .settingsButtons button {
+    width: 40%; }
+
 .settingToggle {
   display: flex;
   justify-content: space-between;
