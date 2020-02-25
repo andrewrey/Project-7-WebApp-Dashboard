@@ -1,6 +1,26 @@
-//                                    //
+////////////////////////////////////////
+//          Bell Notifications        //
+////////////////////////////////////////
+const bellContainter = document.querySelector('.not-bell');
+const bellNotifications = document.querySelector('.bell-notification');
+bellNotifications.innerHTML = `     
+    <ul>
+      <li>Test 1</li>
+      <li>Test 2</li>
+    <ul>`;
+
+bellContainter.addEventListener('click', (e)=>{
+  bellNotifications.classList.toggle('hidden');
+});
+
+
+
+
+
+////////////////////////////////////////
 //          TRAFFIC FULL WIDTH        //
-//                                    //
+////////////////////////////////////////
+
 
 const trafficChart = document.querySelector('#traffic-chart');
 
@@ -39,9 +59,9 @@ let myChart = new Chart(trafficChart,{
 });
 
 
-//                                    //
+////////////////////////////////////////
 //          DAILY TRAFFIC HALF        //
-//                                    //
+////////////////////////////////////////
 
 
 const dailyTrafficChart = document.querySelector('#daily-traffic-chart');
@@ -72,9 +92,10 @@ let myDailyTrafficChart = new Chart(dailyTrafficChart, {
 });
 
 
-//                                    //
-//          MOBIL USERS HALF          //
-//                                    //
+
+////////////////////////////////////////
+//           MOBIL USERS HALF         //
+////////////////////////////////////////
 
 
 const mobileUsersChart = document.querySelector('#mobile-user-chart');

@@ -35,6 +35,21 @@ header {
     background-color: green;
     border-radius: 50%;
   }
+
+  .bell-notification {
+    position: absolute;
+    width: 200px;
+    background-color: lightcyan;
+    border: 1px solid black;
+    color: grey;
+    bottom: -71px;
+    left:0;
+  }
+
+  .hidden{
+    display:none;
+  }
+
   h1{
     margin: 0;
     padding-left: 15px;
