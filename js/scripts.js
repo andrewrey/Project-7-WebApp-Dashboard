@@ -4,17 +4,25 @@
 const bellContainter = document.querySelector('.not-bell');
 const bell = document.querySelector('.bell');
 const bellNotifications = document.querySelector('.bell-notification');
+const notificationX = bellNotifications.querySelectorAll('span');
 bellNotifications.innerHTML = `     
     <ul>
-      <li>Test 1<span>X</span></li>
-      <li>Test 2<span>X</span></li>
+      <li>A new Message is waiting<span>X</span></li>
+      <li>A new User would like to connect<span>X</span></li>
+      <li>New Photo added<span>X</span></li>
+      <li>Updates to our Privacy Policy<span>X</span></li>
     <ul>`;
 
 bell.addEventListener('click', (e)=>{
   bellNotifications.classList.toggle('hidden');
 });
 
-
+bellNotifications.addEventListener('click', (e)=>{
+  let close = e.target;
+  let parentLi = close.parentElement;
+  
+  
+});
 
 
 

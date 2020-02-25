@@ -38,16 +38,22 @@ header {
 
   .bell-notification {
     position: absolute;
-    width: 200px;
+    width: 330px;
     background-color: lightcyan;
     border: 1px solid black;
     color: grey;
-    bottom: -71px;
-    left:0;
+    bottom: -120px;
+    left:-325px;
     ul{
       list-style: none;
+      li{
+        margin-bottom: 10px;
+        border-bottom: 1px solid grey;
+        @include flex();
+      }
       span{
-        margin-left: 15px;
+        margin-left: auto;
+        margin-right: 10px;
         font-weight: bold;
       }
     }
