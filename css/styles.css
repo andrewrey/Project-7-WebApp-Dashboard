@@ -421,7 +421,8 @@ nav {
 /*              Traffic Full Width Chart         */
 /* ============================================= */
 .traffic-linegraph {
-  padding: 30px 3%; }
+  padding: 30px 3%;
+  border-bottom: 1px solid grey; }
 
 .traffic-title-and-nav {
   display: flex;
@@ -443,7 +444,11 @@ nav {
 /* ============================================= */
 .daily-traffic,
 .mobile-half {
-  padding: 30px 6%; }
+  padding: 30px 6%;
+  border-bottom: 1px solid grey; }
+
+.daily-traffic {
+  border-right: 1px solid grey; }
 
 .daily-traffic-graph-container-half,
 .mobile-graph-container-half {
@@ -458,7 +463,8 @@ nav {
 /*              Social Stats Styling          */
 /* ============================================= */
 .social-stats {
-  padding: 30px 3%; }
+  padding: 30px 3%;
+  border-bottom: 1px solid grey; }
   .social-stats .flex-wrap {
     display: flex;
     justify-content: space-evenly; }
@@ -497,6 +503,8 @@ nav {
 /* ============================================= */
 .new-members {
   padding: 30px 6%;
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
   display: flex;
   flex-direction: column; }
   .new-members .member-container {
@@ -516,6 +524,7 @@ nav {
 /* ============================================= */
 .recent-activity {
   padding: 30px 6%;
+  border-bottom: 1px solid grey;
   display: flex;
   flex-direction: column; }
   .recent-activity .member-container {
@@ -534,7 +543,8 @@ nav {
 /*                 Message User                     */
 /* ============================================= */
 .message-user {
-  padding: 30px 6%; }
+  padding: 30px 6%;
+  border-right: 1px solid grey; }
 
 .message-user form {
   margin: 0 auto;
