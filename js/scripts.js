@@ -2,14 +2,15 @@
 //          Bell Notifications        //
 ////////////////////////////////////////
 const bellContainter = document.querySelector('.not-bell');
+const bell = document.querySelector('.bell');
 const bellNotifications = document.querySelector('.bell-notification');
 bellNotifications.innerHTML = `     
     <ul>
-      <li>Test 1</li>
-      <li>Test 2</li>
+      <li>Test 1<span>X</span></li>
+      <li>Test 2<span>X</span></li>
     <ul>`;
 
-bellContainter.addEventListener('click', (e)=>{
+bell.addEventListener('click', (e)=>{
   bellNotifications.classList.toggle('hidden');
 });
 

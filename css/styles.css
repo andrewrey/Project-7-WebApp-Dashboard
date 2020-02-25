@@ -354,6 +354,17 @@ header {
     color: grey;
     bottom: -71px;
     left: 0; }
+    header .bell-notification ul {
+      list-style: none; }
+      header .bell-notification ul span {
+        margin-left: 15px;
+        font-weight: bold; }
+    header .bell-notification ul li::before {
+      content: "\2022";
+      color: green;
+      font-weight: bold;
+      display: inline-block;
+      width: 15px; }
   header .hidden {
     display: none; }
   header h1 {
