@@ -65,6 +65,17 @@
 .traffic-linegraph {
   padding: 30px 3%;
   border-bottom: 1px solid grey;
+  li{
+    background-color: $socialBar;
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: $white;
+  }
+}
+
+
+li.selected {
+  background-color: lightgreen;
 }
 
 .traffic-title-and-nav{

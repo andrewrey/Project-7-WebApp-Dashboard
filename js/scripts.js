@@ -69,9 +69,29 @@ alertBar.addEventListener('click', (e)=>{
 ////////////////////////////////////////
 //          TRAFFIC FULL WIDTH        //
 ////////////////////////////////////////
-
-
+const trafficUl = document.querySelector('.traffic-linegraph ul');
+const trafficLi = document.querySelectorAll('.traffic-linegraph li');
 const trafficChart = document.querySelector('#traffic-chart');
+
+
+trafficUl.addEventListener('click', (e)=>{
+  let eventItem = e.target;
+  if (eventItem.tagName = 'LI'){
+    for(let i = 0; i < trafficLi.length; i++){
+      if(trafficLi[i] === eventItem){
+        trafficLi[i].className += " selected";
+      } else {
+        trafficLi[i].className = '';
+      }
+    }
+
+  }
+
+});
+
+
+
+
 
 let myChart = new Chart(trafficChart,{
     type: 'line',

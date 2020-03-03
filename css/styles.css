@@ -465,6 +465,14 @@ nav {
 .traffic-linegraph {
   padding: 30px 3%;
   border-bottom: 1px solid grey; }
+  .traffic-linegraph li {
+    background-color: #7370AF;
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: #fff; }
+
+li.selected {
+  background-color: lightgreen; }
 
 .traffic-title-and-nav {
   display: flex;
