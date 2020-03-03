@@ -74,67 +74,7 @@ const trafficLi = document.querySelectorAll('.traffic-linegraph li');
 const trafficChart = document.querySelector('#traffic-chart');
 
 
-trafficUl.addEventListener('click', (e)=>{
-  let eventItem = e.target;
-  if (eventItem.tagName = 'LI'){
-    for(let i = 0; i < trafficLi.length; i++){
-      if(trafficLi[i] === eventItem){
-        trafficLi[i].className += " selected";
-      } else {
-        trafficLi[i].className = '';
-      }
-    }
-  }
-
-});
-
-
-
-
-
-let myChart = new Chart(trafficChart,{
-    type: 'line',
-    data: {
-      labels: ['16-22', '23-29', '30-5', '6-12', '13-19', '20-26', '27-3', '4-10', '11-17', '18-24', '25-31'],
-      datasets: [{
-        data:[750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500, 2500],
-        backgroundColor: 'rgba(116, 119, 191, .3)',
-        borderWidth: 1,
-        pointBackgroundColor: '#fff',
-        pointBorderColor: 'rgb(168, 50, 153)',
-        lineTension: 0.1
-      }],
-    },
-    options:{
-      aspectRatio: 2.5,
-      animation: {
-        durration: 0
-      },
-      legend: {
-        display: false
-      },
-      scales:{
-        yAxes:[{
-          gridLines:{
-            color: "pink"
-          },
-          ticks: {
-            beginAtZero: true,
-          }
-        }]
-      }
-    }
-});
-//////// Function for creating Traffic Chart/////////////////
-function createTrafficChart(chartData, chartOptions){
-  let myChart = new Chart(trafficChart, {
-    type: 'line',
-    data: chartData,
-    options: chartOptions,  
-  })
-}
-
-////////Data Charts for Traffic Full Width///////////////////
+////////Data Charts for Traffic Full Width & Options ///////////////////
 
 const weeklyChart = {
   labels: ['16-22', '23-29', '30-5', '6-12', '13-19', '20-26', '27-3', '4-10', '11-17', '18-24', '25-31'],
@@ -147,6 +87,101 @@ const weeklyChart = {
         lineTension: 0.1
       }],
 };
+
+const dailyChart = {
+  labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
+      datasets: [{
+        data:[330, 600, 100, 250, 1500, 900, 1250],
+        backgroundColor: 'rgba(116, 119, 191, .3)',
+        borderWidth: 1,
+        pointBackgroundColor: '#fff',
+        pointBorderColor: 'rgb(168, 50, 153)',
+        lineTension: 0.1
+      }],
+};
+
+
+
+const hourlyChart = {
+  labels: ['00:00', '04:00', '08:00', '12:00', '16:00', '20:00'],
+      datasets: [{
+        data:[60, 100, 80, 300, 250, 200],
+        backgroundColor: 'rgba(116, 119, 191, .3)',
+        borderWidth: 1,
+        pointBackgroundColor: '#fff',
+        pointBorderColor: 'rgb(168, 50, 153)',
+        lineTension: 0.1
+      }],
+};
+
+
+const monthlyChart = {
+  labels: ['Jan', 'Feb', 'March', 'April', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      datasets: [{
+        data:[500, 1000, 300, 1500, 1300, 1800, 900, 1450, 1100, 1500, 2500, 2300],
+        backgroundColor: 'rgba(116, 119, 191, .3)',
+        borderWidth: 1,
+        pointBackgroundColor: '#fff',
+        pointBorderColor: 'rgb(168, 50, 153)',
+        lineTension: 0.1
+      }],
+};
+
+const trafficChartOptions = {
+  aspectRatio: 2.5,
+  animation: {
+    durration: 0
+  },
+  legend: {
+    display: false
+  },
+  scales:{
+    yAxes:[{
+      gridLines:{
+        color: "pink"
+      },
+      ticks: {
+        beginAtZero: true,
+      }
+    }]
+  }
+};
+
+
+//////// Function for creating Traffic Chart/////////////////
+function createTrafficChart(chartData, chartOptions){
+  let myChart = new Chart(trafficChart, {
+    type: 'line',
+    data: chartData,
+    options: chartOptions,  
+  })
+}
+
+
+createTrafficChart(weeklyChart, trafficChartOptions);
+
+trafficUl.addEventListener('click', (e)=>{
+  let eventItem = e.target;
+  if(eventItem.id === "hourly"){
+    createTrafficChart(hourlyChart, trafficChartOptions);
+  } else if (eventItem.id === "daily"){
+    createTrafficChart(dailyChart, trafficChartOptions);
+  } else if (eventItem.id === "weekly"){
+    createTrafficChart(weeklyChart, trafficChartOptions);
+  } else if (eventItem.id === "monthly"){
+    createTrafficChart(monthlyChart, trafficChartOptions);
+  }
+  if (eventItem.tagName = 'LI'){
+    for(let i = 0; i < trafficLi.length; i++){
+      if(trafficLi[i] === eventItem){
+        trafficLi[i].className += " selected";
+      } else {
+        trafficLi[i].className = '';
+      }
+    }
+  }
+});
+
 
 
 
