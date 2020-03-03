@@ -43,10 +43,21 @@ bellContainer.addEventListener('click', (e)=>{
 
 const alertBar = document.querySelector('.alert-bar');
 alertBar.innerHTML = `
-<div>
+<div class="inner-div">
   <p class="first"><strong>Alert</strong> You have <strong>6</strong> overdue items!!</p>
   <p class="close">X</p>
 </div>`;
+
+const close = alertBar.querySelector('.close');
+const innerAlertDiv = alertBar.querySelector('div.inner-div');
+
+alertBar.addEventListener('click', (e)=>{
+  if(e.target.className ==="close"){
+    let alertBarParent = alertBar.parentNode;
+    alertBarParent.removeChild(alertBar);
+  }
+});
+
 
 
 
