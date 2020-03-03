@@ -352,24 +352,24 @@ header {
     background-color: lightcyan;
     border: 1px solid black;
     color: grey;
-    bottom: -120px;
-    left: -325px; }
-    header .bell-notification ul {
-      list-style: none; }
-      header .bell-notification ul li {
-        margin-bottom: 10px;
-        border-bottom: 1px solid grey;
-        display: flex; }
-      header .bell-notification ul span {
-        margin-left: auto;
-        margin-right: 10px;
-        font-weight: bold; }
-    header .bell-notification ul li::before {
-      content: "\2022";
-      color: green;
-      font-weight: bold;
-      display: inline-block;
-      width: 15px; }
+    bottom: -150px;
+    left: -300px; }
+    header .bell-notification div {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid lightgrey;
+      transition: 2s; }
+      header .bell-notification div:hover {
+        border-bottom: 2px solid black;
+        background-color: lightsalmon;
+        font-size: 1.2rem; }
+      header .bell-notification div span {
+        margin-right: 10px; }
+      header .bell-notification div p {
+        margin-right: auto;
+        margin-left: 10px; }
+        header .bell-notification div p::before {
+          content: "\2728"; }
   header .hidden {
     display: none; }
   header h1 {

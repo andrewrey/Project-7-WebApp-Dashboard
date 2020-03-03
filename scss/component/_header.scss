@@ -42,29 +42,28 @@ header {
     background-color: lightcyan;
     border: 1px solid black;
     color: grey;
-    bottom: -120px;
-    left:-325px;
-    ul{
-      list-style: none;
-      li{
-        margin-bottom: 10px;
-        border-bottom: 1px solid grey;
-        @include flex();
+    bottom: -150px;
+    left: -300px;
+    div{
+      @include flex($align:center);
+      border-bottom: 1px solid lightgrey;
+      transition: 2s;
+      &:hover{
+        border-bottom: 2px solid black;
+        background-color: lightsalmon;
+        font-size: 1.2rem;
       }
       span{
-        margin-left: auto;
         margin-right: 10px;
-        font-weight: bold;
+      }
+      p{
+        margin-right: auto;
+        margin-left: 10px;
+        &::before{
+          content: "\2728";
+        }
       }
     }
-     ul li::before{
-      content: "\2022";
-      color: green;
-      font-weight: bold;
-      display: inline-block;
-      width: 15px;
-    }
-    
   }
 
   .hidden{

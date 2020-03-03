@@ -1,29 +1,40 @@
 ////////////////////////////////////////
 //          Bell Notifications        //
 ////////////////////////////////////////
-const bellContainter = document.querySelector('.not-bell');
+const bellContainer = document.querySelector('.not-bell');
 const bell = document.querySelector('.bell');
 const bellNotifications = document.querySelector('.bell-notification');
 const notificationX = bellNotifications.querySelectorAll('span');
 bellNotifications.innerHTML = `     
-    <ul>
-      <li>A new Message is waiting<span>X</span></li>
-      <li>A new User would like to connect<span>X</span></li>
-      <li>New Photo added<span>X</span></li>
-      <li>Updates to our Privacy Policy<span>X</span></li>
-    <ul>`;
+   <div>
+     <p>New email waiting</p>
+     <span>X</span>
+   </div>
+   <div>
+     <p>Request for connection</p>
+     <span>X</span>
+   </div>
+   <div>
+     <p>New photos posted</p>
+     <span>X</span>
+   </div>`;
 
-bell.addEventListener('click', (e)=>{
+bell.addEventListener('click', ()=>{
   bellNotifications.classList.toggle('hidden');
 });
 
-bellNotifications.addEventListener('click', (e)=>{
-  let close = e.target;
-  let parentLi = close.parentElement;
-  
-  
+bellContainer.addEventListener('click', (e)=>{
+  let eventItem = e.target;
+  let notificationDivs = bellNotifications.querySelectorAll('div');
+  if (eventItem.tagName === 'SPAN'){
+    let parentDiv = eventItem.parentNode;
+    if(notificationDivs.length < 2){
+      bellContainer.removeChild(bellNotifications);
+    } else {
+      bellNotifications.removeChild(parentDiv);
+    }
+  }
 });
-
 
 
 ////////////////////////////////////////
