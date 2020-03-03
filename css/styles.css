@@ -444,6 +444,22 @@ nav {
       width: 43%; }
 
 /* ============================================= */
+/*               Alert Bar Input                 */
+/* ============================================= */
+.alert-bar {
+  font-size: .8rem;
+  padding: 30px 3%; }
+  .alert-bar div {
+    background-color: #7370AF;
+    color: #fff;
+    display: flex; }
+    .alert-bar div .first {
+      margin-right: auto;
+      margin-left: 10px; }
+    .alert-bar div .close {
+      margin-right: 10px; }
+
+/* ============================================= */
 /*              Traffic Full Width Chart         */
 /* ============================================= */
 .traffic-linegraph {
@@ -667,6 +683,7 @@ main {
 
 @media (min-width: 768px) {
   .dashboard-header,
+  .alert-bar,
   .traffic-linegraph,
   .social-stats {
     grid-column: 1 / -1; } }

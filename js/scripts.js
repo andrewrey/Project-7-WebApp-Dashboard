@@ -38,6 +38,24 @@ bellContainer.addEventListener('click', (e)=>{
 
 
 ////////////////////////////////////////
+//            Alert Bar               //
+////////////////////////////////////////
+
+const alertBar = document.querySelector('.alert-bar');
+alertBar.innerHTML = `
+<div>
+  <p class="first"><strong>Alert</strong> You have <strong>6</strong> overdue items!!</p>
+  <p class="close">X</p>
+</div>`;
+
+
+
+
+
+
+
+
+////////////////////////////////////////
 //          TRAFFIC FULL WIDTH        //
 ////////////////////////////////////////
 

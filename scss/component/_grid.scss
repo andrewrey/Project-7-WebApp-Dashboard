@@ -48,6 +48,7 @@ main {
 }
 
 .dashboard-header,
+.alert-bar,
 .traffic-linegraph,
 .social-stats {
   @include mq ($break){

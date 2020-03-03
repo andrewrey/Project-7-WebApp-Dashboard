@@ -33,6 +33,31 @@
   }
 }
 
+/* ============================================= */
+/*               Alert Bar Input                 */
+/* ============================================= */
+
+.alert-bar {
+  font-size: .8rem;
+  padding: 30px 3%;
+  div{
+    background-color: $socialBar;
+    color: $white;
+    @include flex();
+    .first{
+      margin-right: auto;
+      margin-left: 10px;
+    }
+    .close{
+      margin-right: 10px;
+    }
+  }
+}
+
+
+
+
+
 
 /* ============================================= */
 /*              Traffic Full Width Chart         */
