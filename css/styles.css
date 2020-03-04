@@ -597,6 +597,7 @@ li.selected {
   border-right: 1px solid grey; }
 
 .message-user form {
+  position: relative;
   margin: 0 auto;
   display: flex;
   flex-direction: column; }
@@ -613,6 +614,18 @@ li.selected {
     border-radius: 5px;
     background-color: #7370AF;
     color: #fff; }
+
+.autoComplete {
+  position: absolute;
+  top: 42px;
+  left: 0;
+  background-color: #fff;
+  width: 50%; }
+  .autoComplete ul {
+    list-style-type: none;
+    padding: 0; }
+    .autoComplete ul li {
+      border-bottom: 1px solid lightgrey; }
 
 /* ============================================= */
 /*                 Settings                      */

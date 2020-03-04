@@ -278,9 +278,20 @@ function createLi(listArray){
 
 
 searchInput.addEventListener('keyup', (e)=>{
-  let membersNames =['andrew reynolds', 'tim mannings', 'sarah lee', 'rudy grange'];
+  let membersNames =['Andrew Reynolds', 'Tim Mannings', 'Sarah Lee', 'Rudy Grange'];
   let value = searchInput.value;
-  let suggestions = membersNames.filter(name => name.includes(value));
+  let suggestions = membersNames.filter(name => name.toLowerCase().includes(value));
   let listItems = suggestions.map(li =>`<li>${li}</li>`);
+  if(autoCompleteList.style.display === 'none'){
+      autoCompleteList.style.display = '';
+  }
   createLi(listItems);
+});
+
+autoCompleteList.addEventListener('click', (e)=>{
+  let eventItem = e.target;
+  if (eventItem.tagName = "LI"){
+    searchInput.value = eventItem.textContent;
+    autoCompleteList.style.display = 'none'
+  }
 });
