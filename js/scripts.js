@@ -61,11 +61,6 @@ alertBar.addEventListener('click', (e)=>{
 
 
 
-
-
-
-
-
 ////////////////////////////////////////
 //          TRAFFIC FULL WIDTH        //
 ////////////////////////////////////////
@@ -260,4 +255,20 @@ let myMobileChart = new Chart(mobileUsersChart, {
       }]
     }
   }
+});
+
+
+
+
+////////////////////////////////////////
+//   Message User with Search Bar     //
+////////////////////////////////////////
+
+const searchInput = document.querySelector('#message_search');
+
+searchInput.addEventListener('keyup', (e)=>{
+  let membersNames =['andrew reynolds', 'tim mannings', 'sarah lee', 'rudy grange'];
+  let value = searchInput.value;
+  let suggestions = membersNames.filter(name => name.includes(value));
+  console.log(suggestions);
 });
