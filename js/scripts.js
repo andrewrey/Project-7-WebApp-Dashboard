@@ -265,10 +265,22 @@ let myMobileChart = new Chart(mobileUsersChart, {
 ////////////////////////////////////////
 
 const searchInput = document.querySelector('#message_search');
+const autoCompleteList = document.querySelector('.autoComplete');
+
+function createLi(listArray){
+  if(listArray.length){
+    let html = "<ul>";
+    html += listArray.join('');
+    html += "</ul>";
+    autoCompleteList.innerHTML = html;
+  }
+}
+
 
 searchInput.addEventListener('keyup', (e)=>{
   let membersNames =['andrew reynolds', 'tim mannings', 'sarah lee', 'rudy grange'];
   let value = searchInput.value;
   let suggestions = membersNames.filter(name => name.includes(value));
-  console.log(suggestions);
+  let listItems = suggestions.map(li =>`<li>${li}</li>`);
+  createLi(listItems);
 });
