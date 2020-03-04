@@ -263,7 +263,7 @@ let myMobileChart = new Chart(mobileUsersChart, {
 ////////////////////////////////////////
 //   Message User with Search Bar     //
 ////////////////////////////////////////
-
+const pageBody = document.querySelector('body');
 const searchInput = document.querySelector('#message_search');
 const autoCompleteList = document.querySelector('.autoComplete');
 
@@ -277,21 +277,26 @@ function createLi(listArray){
 }
 
 
+
 searchInput.addEventListener('keyup', (e)=>{
   let membersNames =['Andrew Reynolds', 'Tim Mannings', 'Sarah Lee', 'Rudy Grange'];
   let value = searchInput.value;
   let suggestions = membersNames.filter(name => name.toLowerCase().includes(value));
-  let listItems = suggestions.map(li =>`<li>${li}</li>`);
+  let listItems = suggestions.map(li =>`<li class="suggestion">${li}</li>`);
   if(autoCompleteList.style.display === 'none'){
       autoCompleteList.style.display = '';
   }
   createLi(listItems);
 });
 
-autoCompleteList.addEventListener('click', (e)=>{
+
+
+pageBody.addEventListener('click', (e)=>{
   let eventItem = e.target;
-  if (eventItem.tagName = "LI"){
+  if (eventItem.className === "suggestion"){
     searchInput.value = eventItem.textContent;
     autoCompleteList.style.display = 'none'
+  } else {
+    autoCompleteList.style.display = 'none';
   }
 });

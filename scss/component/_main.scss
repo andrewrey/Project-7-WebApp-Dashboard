@@ -284,8 +284,16 @@ li.selected {
   ul{
     list-style-type: none; 
     padding: 0;  
+    margin-bottom: 0;
     li{
       border-bottom: 1px solid lightgrey;
+      margin-bottom: 5px;
+      transition: 2s;
+      &:hover{
+        background-color: lightsalmon;
+        transform: scale(1.1);
+        
+      }
     }
   }
 

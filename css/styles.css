@@ -623,9 +623,15 @@ li.selected {
   width: 50%; }
   .autoComplete ul {
     list-style-type: none;
-    padding: 0; }
+    padding: 0;
+    margin-bottom: 0; }
     .autoComplete ul li {
-      border-bottom: 1px solid lightgrey; }
+      border-bottom: 1px solid lightgrey;
+      margin-bottom: 5px;
+      transition: 2s; }
+      .autoComplete ul li:hover {
+        background-color: lightsalmon;
+        transform: scale(1.1); }
 
 /* ============================================= */
 /*                 Settings                      */
