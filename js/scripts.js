@@ -338,3 +338,17 @@ saveSettings.addEventListener('click', (e)=>{
   localStorage.setItem('profile', profileCheckbox.checked);
   console.log(localStorage.getItem('profile'));
 });
+
+function localStorageCheck(){
+  let profileChecked = localStorage.getItem("profile");
+  console.log(profileChecked);
+  if (profileChecked === 'false'){
+    profileCheckbox.checked = false;
+  } else {
+    profileCheckbox.checked = true;
+  }
+
+}
+
+window.onload = localStorageCheck();
+
