@@ -315,6 +315,10 @@ template {
 * {
   box-sizing: border-box; }
 
+.message-user form textarea.error,
+.message-user form input.error {
+  box-shadow: inset 0 0 10px red; }
+
 /* ============================================= */
 /*              Typography                       */
 /* ============================================= */
@@ -628,7 +632,8 @@ li.selected {
     .autoComplete ul li {
       border-bottom: 1px solid lightgrey;
       margin-bottom: 5px;
-      transition: 2s; }
+      transition: 2s;
+      padding: 5px; }
       .autoComplete ul li:hover {
         background-color: lightsalmon;
         transform: scale(1.1); }

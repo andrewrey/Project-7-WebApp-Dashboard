@@ -265,7 +265,9 @@ let myMobileChart = new Chart(mobileUsersChart, {
 ////////////////////////////////////////
 const pageBody = document.querySelector('body');
 const searchInput = document.querySelector('#message_search');
+const textArea = document.querySelector('.message-user textarea');
 const autoCompleteList = document.querySelector('.autoComplete');
+const sendButton = document.querySelector('.message-user form button');
 
 function createLi(listArray){
   if(listArray.length){
@@ -298,5 +300,24 @@ pageBody.addEventListener('click', (e)=>{
     autoCompleteList.style.display = 'none'
   } else {
     autoCompleteList.style.display = 'none';
+  }
+});
+
+sendButton.addEventListener('click', (e)=>{
+  e.preventDefault();
+  textArea.className = '';
+  searchInput.className = '';
+  if(textArea.value === '' && searchInput.value === ''){
+    alert("You have failed to fill in the following: Search for User and Message fields");
+    textArea.className = 'error';
+    searchInput.className = 'error';
+  } else if (textArea.value === '' ){
+    alert("You have failed to fill in the Message Field");
+    textArea.className = 'error';
+  } else if (searchInput.value === ''){
+    alert('You have failed to fill in the Search for User Field');
+    searchInput.className = 'error';
+  } else {
+    alert(`Message has been sent to ${searchInput.value}`)
   }
 });
