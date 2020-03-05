@@ -321,3 +321,20 @@ sendButton.addEventListener('click', (e)=>{
     alert(`Message has been sent to ${searchInput.value}`)
   }
 });
+
+
+////////////////////////////////////////
+//         Settings Menu              //
+////////////////////////////////////////
+
+let emailCeckbox = document.querySelector('.settingsHalfscreen .email');
+let profileCheckbox = document.querySelector('.settingsHalfscreen .profile');
+let selectTime = document.querySelector('.settingsHalfscreen .timeZone');
+
+const saveSettings = document.querySelector('.settingsButtons .save');
+const cancelSettings = document.querySelector('.settingsButtons .cancel');
+
+saveSettings.addEventListener('click', (e)=>{
+  localStorage.setItem('profile', profileCheckbox.checked);
+  console.log(localStorage.getItem('profile'));
+});
