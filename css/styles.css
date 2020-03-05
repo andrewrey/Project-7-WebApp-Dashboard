@@ -332,7 +332,8 @@ header {
   align-items: center;
   color: #fff; }
   header .not-bell {
-    width: 70px;
+    width: 10%;
+    max-width: 60px;
     position: relative;
     margin-left: auto;
     margin-top: 0;
@@ -352,12 +353,18 @@ header {
     border-radius: 50%; }
   header .bell-notification {
     position: absolute;
+    width: 200px;
+    bottom: -150px;
+    left: -250px;
     width: 330px;
     background-color: lightcyan;
     border: 1px solid black;
-    color: grey;
-    bottom: -150px;
-    left: -300px; }
+    color: grey; }
+    @media (min-width: 550px) {
+      header .bell-notification {
+        width: 330px;
+        bottom: -150px;
+        left: -300px; } }
     header .bell-notification div {
       display: flex;
       align-items: center;
@@ -380,7 +387,8 @@ header {
     margin: 0;
     padding-left: 15px; }
   header .userphotobox {
-    width: 70px;
+    width: 10%;
+    max-width: 55px;
     padding-left: 15px;
     border-left: 1px solid grey;
     margin-right: 15px; }
@@ -564,6 +572,8 @@ li.selected {
   .new-members .member-container {
     display: flex;
     height: 100px; }
+    .new-members .member-container .date {
+      margin-left: auto; }
     .new-members .member-container img {
       height: 35px;
       border-radius: 50%;
@@ -687,7 +697,7 @@ body {
   display: grid;
   height: 100vh;
   grid-template-columns: 100%;
-  grid-template-rows: 100px 120px auto;
+  grid-template-rows: 80px 80px auto;
   grid-template-areas: "header" "nav" "main"; }
   @media (min-width: 768px) {
     body {
@@ -697,6 +707,9 @@ body {
 
 header {
   grid-area: header; }
+  @media (min-width: 768px) {
+    header {
+      padding-top: 10px; } }
 
 nav {
   grid-area: nav; }

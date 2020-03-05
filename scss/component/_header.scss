@@ -11,7 +11,8 @@ header {
   color: $white;
   
   .not-bell{
-    width: 70px;
+    width: 10%;
+    max-width: 60px;
     position: relative;
     margin-left: auto;
     margin-top: 0;
@@ -38,12 +39,18 @@ header {
 
   .bell-notification {
     position: absolute;
+    width: 200px;
+    bottom: -150px;
+    left: -250px;
+    @include mq(550px){
+      width: 330px;
+      bottom: -150px;
+      left: -300px;
+    }
     width: 330px;
     background-color: lightcyan;
     border: 1px solid black;
     color: grey;
-    bottom: -150px;
-    left: -300px;
     div{
       @include flex($align:center);
       border-bottom: 1px solid lightgrey;
@@ -76,7 +83,8 @@ header {
   }
   
   .userphotobox {
-    width: 70px;
+    width: 10%;
+    max-width: 55px;
     padding-left: 15px;
     border-left: 1px solid grey;
     margin-right: 15px;

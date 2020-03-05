@@ -189,10 +189,12 @@ li.selected {
     padding: 30px 6%;
     border-bottom: 1px solid grey;
     border-right: 1px solid grey;
-    display: flex;
-    flex-direction: column;
+    @include flex($dir:column);
     .member-container{
-      display: flex;
+      @include flex();
+      .date {
+        margin-left: auto;
+      }
       height: 100px;
       img{
         height: 35px;
