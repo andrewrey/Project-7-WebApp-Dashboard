@@ -327,7 +327,7 @@ sendButton.addEventListener('click', (e)=>{
 //         Settings Menu              //
 ////////////////////////////////////////
 
-let emailCeckbox = document.querySelector('.settingsHalfscreen .email');
+let emailCheckbox = document.querySelector('.settingsHalfscreen .email');
 let profileCheckbox = document.querySelector('.settingsHalfscreen .profile');
 let selectTime = document.querySelector('.settingsHalfscreen .timeZone');
 
@@ -336,17 +336,40 @@ const cancelSettings = document.querySelector('.settingsButtons .cancel');
 
 saveSettings.addEventListener('click', (e)=>{
   localStorage.setItem('profile', profileCheckbox.checked);
+  localStorage.setItem('email', emailCheckbox.checked);
+  localStorage.setItem('timeZone', selectTime.value);
   console.log(localStorage.getItem('profile'));
+});
+
+cancelSettings.addEventListener('click', (e)=>{
+  let keys = ['profile', 'email', 'timeZone']
+  for (key of keys){
+    localStorage.removeItem(key);
+  }
 });
 
 function localStorageCheck(){
   let profileChecked = localStorage.getItem("profile");
+  let emailChecked = localStorage.getItem('email');
+  let timeZoneSelected = localStorage.getItem('timeZone');
   console.log(profileChecked);
   if (profileChecked === 'false' || profileChecked === null){
     profileCheckbox.checked = false;
   } else {
     profileCheckbox.checked = true;
   }
+
+  if(emailChecked === 'false' || emailChecked === null ){
+    emailCheckbox.checked = false;
+  } else {
+    emailCheckbox.checked = true;
+  }
+
+  if(timeZoneSelected !== null){
+    selectTime.value = timeZoneSelected;
+  }
+
+
 
 }
 
