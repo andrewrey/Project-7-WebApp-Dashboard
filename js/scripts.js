@@ -342,7 +342,7 @@ saveSettings.addEventListener('click', (e)=>{
 function localStorageCheck(){
   let profileChecked = localStorage.getItem("profile");
   console.log(profileChecked);
-  if (profileChecked === 'false'){
+  if (profileChecked === 'false' || profileChecked === null){
     profileCheckbox.checked = false;
   } else {
     profileCheckbox.checked = true;
