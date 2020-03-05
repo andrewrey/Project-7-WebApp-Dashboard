@@ -200,6 +200,7 @@ li.selected {
         height: 35px;
         border-radius: 50%;
         display: inline-block;
+        margin-right: 10px;
       }
       .user-info{
         display: inline-block;
@@ -221,12 +222,13 @@ li.selected {
   display: flex;
   flex-direction: column;
   .member-container{
-    display: flex;
+    @include flex($align:center);
     height: 100px;
     img{
       height: 35px;
       border-radius: 50%;
       display: inline-block;
+      margin-right: 10px;
     }
     .user-info {
       display: inline-block;
@@ -237,6 +239,10 @@ li.selected {
   }
 }
 
+.chevron {
+  margin-left: auto;
+  font-size: 2rem;
+}
 
 
 

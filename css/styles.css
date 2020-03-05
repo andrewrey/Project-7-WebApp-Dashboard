@@ -577,7 +577,8 @@ li.selected {
     .new-members .member-container img {
       height: 35px;
       border-radius: 50%;
-      display: inline-block; }
+      display: inline-block;
+      margin-right: 10px; }
     .new-members .member-container .user-info {
       display: inline-block; }
       .new-members .member-container .user-info p {
@@ -593,15 +594,21 @@ li.selected {
   flex-direction: column; }
   .recent-activity .member-container {
     display: flex;
+    align-items: center;
     height: 100px; }
     .recent-activity .member-container img {
       height: 35px;
       border-radius: 50%;
-      display: inline-block; }
+      display: inline-block;
+      margin-right: 10px; }
     .recent-activity .member-container .user-info {
       display: inline-block; }
       .recent-activity .member-container .user-info p {
         margin: 0; }
+
+.chevron {
+  margin-left: auto;
+  font-size: 2rem; }
 
 /* ============================================= */
 /*                 Message User                     */
